@@ -31,7 +31,7 @@ function changeBackgroundImage() {
     setInterval(() => {
         currentIndex = (currentIndex + 1) % backgroundImages.length;
         backgroundElement.style.backgroundImage = `url(${backgroundImages[currentIndex]})`;
-    }, 4000); // Change every 3 seconds (3000 milliseconds)
+    }, 6000); // Change every 3 seconds (3000 milliseconds)
 }
 
 // Function to hide message div and reset any other elements if needed
