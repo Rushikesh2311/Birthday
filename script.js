@@ -17,7 +17,25 @@ function changeBackgroundImage() {
     }, 3000); // Change every 3 seconds (3000 milliseconds)
 }
 
-// Call the function when the page loads
+// Function to hide message div and reset any other elements if needed
+function cancelMessage() {
+    const messageDiv = document.getElementById('messageDiv');
+    messageDiv.style.display = 'none';
+    // Add any other reset logic here if necessary
+}
+
+// Call the functions when the page loads
 window.onload = function() {
     changeBackgroundImage();
+
+    // Event listener for toggle message button
+    document.getElementById('toggleMessageBtn').addEventListener('click', function() {
+        const messageDiv = document.getElementById('messageDiv');
+        messageDiv.style.display = messageDiv.style.display === 'none' ? 'block' : 'none';
+    });
+
+    // Event listener for close message button
+    document.getElementById('closeMessageBtn').addEventListener('click', function() {
+        cancelMessage();
+    });
 };

@@ -55,3 +55,12 @@ p {
         transform: translateY(-15px);
     }
 }
+/* styles.css */
+.message {
+    background-color: rgba(255, 255, 255, 0.5); /* Decreased opacity for semi-transparent effect */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+}

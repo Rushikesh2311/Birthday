@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +12,31 @@
 <body>
     <div class="background-image">
         <div class="container">
-            <h1>Happy Birthday, [Her Name]!</h1>
+            <p>Happy Birthday! Mera pyarra Pandu</p>
+            <p>so I told you naa that I am working on something , actually I was working on this website as my original plan is cancelled so I thought of making something for you and this I tried to do hope you like it</p>
+           
+
+            <!-- Button to toggle message -->
+            <button id="toggleMessageBtn">Show Secret Message</button>
+
+            <!-- Hidden div to display message -->
+            <div id="messageDiv" class="message" style="display: none;">
+                <button id="closeMessageBtn" class="close-btn"><i class="fas fa-times"></i></button>
+                <h2>Message</h2>
+                
+                
             <p>I hope this message finds you in great spirits. I wanted to take a moment to let you know just how much I love you. Even though we're far apart, my thoughts and heart are always with you.</p>
             <p>You are an incredible person, and I have no doubt that you will be successful in your career and accomplish all your goals. Your ambition and determination inspire me every day. I am so proud of you for planning to pursue your PhD in Japan. I know you will excel in this new chapter of your life, and I can't wait to see all the amazing things you will achieve.</p>
+            <p>I miss you terribly and wish I could be there to celebrate this special day with you. Please know that you are always in my heart, and I am cheering you on from afar.</p>
             <p>Have a wonderful birthday, filled with joy, love, and all the happiness you deserve.</p>
+            <p>Also, lastly I want you to know that I believe in you more than anyone in this world even more than yourself.</p>
+
+
             <p>With all my love,</p>
-            <p>[Your Name]</p>
+            <p>Rushikesh 😘😘😘</p>
+            </div>
+            <button onclick="goToBackgroundImagesPage()"> some of our lovely moment</button>
+
             <div class="bouncing-logos">
                 <i class="fas fa-birthday-cake"></i>
                 <i class="fas fa-birthday-cake"></i>
@@ -25,6 +45,12 @@
             </div>
         </div>
     </div>
+    <script>
+        // Function to navigate to background images page
+        function goToBackgroundImagesPage() {
+            window.location.href = 'background.html';
+        }
+    </script>
 
     <script src="script.js"></script>
 </body>
