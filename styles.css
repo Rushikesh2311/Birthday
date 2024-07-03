@@ -1,22 +1,22 @@
+/* styles.css */
+
+/* Body styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.background-image {
-    background-image: url('your_image_url.jpg'); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color:pink; /* Pink background color for the entire screen */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
+/* Background image container styles */
 .background-image {
-    background-image: url('your-image.jpg'); /* Replace with your background image */
-    height: 100vh; /* Full viewport height */
+    background-image: url('your-image.jpg'); /* Replace with your background image URL */
+    width: 70%; /* Adjusted width */
+    height: 100%; /* Full viewport height */
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the background image */
     display: flex;
@@ -27,10 +27,22 @@ body {
     font-size: 24px;
     font-weight: bold;
     font-family: Arial, sans-serif;
+    transition: background-image 0.3s ease; /* Smooth transition for background image */
 }
 
+/* Hover effect example */
+.background-image:hover {
+    opacity: 0.8; /* Example of changing opacity on hover */
+}
+
+
+/* styles.css */
+
+/* Styles for background image container */
+
+
 .container {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background-color: rgba(245, 15, 214, 0.8); /* Semi-transparent white background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

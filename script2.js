@@ -16,7 +16,6 @@ const backgroundImages = [
     'image14.jpeg',
     'image15.jpeg',
     'image16.jpeg',
-    'image17.jpeg',
     'image18.jpeg',
     'image19.jpeg',
 
